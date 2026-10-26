@@ -1,6 +1,6 @@
-# ECHO — Sandeep Datta's Creative Portfolio
+# Stellan — Sandeep Datta's Creative Portfolio
 
-A monochrome, motion-led portfolio adapted from the original ECHO website to present **Sandeep Datta's** projects, interests, and creative work.
+A monochrome, motion-led portfolio adapted from the original portfolio template to present **Sandeep Datta's** projects, interests, and creative work.
 
 > **Attribution:** This repository began as a copy of [ECHO-WEBSITE by Jishnu Mondal](https://github.com/Jishnu09-siuu/ECHO-WEBSITE). The original components, visual system, and assets have been retained and adapted. Please review the upstream repository's license and attribution requirements before redistributing.
 
@@ -24,12 +24,12 @@ This portfolio represents ongoing learning and personal projects; it does not cl
 |---|---|---|
 | **Luna AI** | An evolving AI assistant project under DeimosAI | [GitHub repository](https://github.com/sandeep-datta-research/Luna) |
 | **DeimosAI** | Parent brand and project space for AI and creative-technology experiments | [GitHub repository](https://github.com/sandeep-datta-research/Deimosai) |
-| **ECHO Portfolio** | This interactive editorial portfolio | [GitHub repository](https://github.com/sandeep-datta-research/Echo) |
+| **Stellan Portfolio** | This interactive editorial portfolio | [GitHub repository](https://github.com/sandeep-datta-research/Echo) |
 | **Anime AMVs** | Video editing and anime-focused visual storytelling | [Instagram](https://www.instagram.com/ur.seiua/) |
 | **Clouded by You** | Original webnovel by ifsato | In progress |
 | **Systems Lab** | Learning in Linux, networking, security fundamentals, and troubleshooting | In progress |
 
-## Original ECHO features retained
+## Original template features retained
 
 - Orbital preloader and editorial typography.
 - Scroll-driven expanding media stage.
