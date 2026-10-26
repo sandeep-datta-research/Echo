@@ -84,7 +84,7 @@ export const DEFAULT_WORKS = [
     description: "An ongoing romance, mystery, and supernatural-weather story exploring reincarnation and fate.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
-    href: "#contact",
+    href: "https://www.webnovel.com/book/clouded-by-you_35645915308878605",
     stats: "Fiction • Mystery • Supernatural Romance",
     tools: ["Creative writing","Worldbuilding","Story structure"],
     deliverables: ["Webnovel chapters","Character arcs","Worldbuilding"]
