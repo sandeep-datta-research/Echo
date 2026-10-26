@@ -4,52 +4,52 @@ export const photo = (id) => `https://images.unsplash.com/${id}?w=1200&q=80&auto
 
 export const DEFAULT_ITEMS = [
   {
-    src: 'Project Images/Cafe Website.png',
-    alt: 'Cafe Website',
-    title: 'Cafe Website',
-    subtitle: 'Editorial Coffee House Experience',
-    description: 'A full-stack cafe management system with an admin portal for orders, menu, and reservations',
-    link: 'https://mochaandmiso.web.app/'
+    src: "Project Images/Cafe Website.png",
+    alt: "Luna AI",
+    title: "Luna AI",
+    subtitle: "AI Assistant · DeimosAI",
+    description: "An evolving personal AI assistant project focused on a polished, useful conversational experience.",
+    link: "https://github.com/sandeep-datta-research/Luna"
   },
   {
-    src: 'Project Images/Design Studio.png',
-    alt: 'Design Studio',
-    title: 'Design Studio',
-    subtitle: 'Creative Agency & Brand Identity',
-    description: 'A bold design studio website built to showcase creative services, brand identity, and digital experiences',
-    link: 'https://echo-design-studio-ex.vercel.app/'
+    src: "Project Images/Design Studio.png",
+    alt: "DeimosAI",
+    title: "DeimosAI",
+    subtitle: "Parent Brand & Creative Technology",
+    description: "A project space for AI-powered products and experiments in creative technology.",
+    link: "https://github.com/sandeep-datta-research/Deimosai"
   },
   {
-    src: 'Project Images/Photographer Portfolio.png',
-    alt: 'Photographer Portfolio',
-    title: 'Photographer Portfolio',
-    subtitle: 'Editorial & Analog Photography',
-    description: 'An analog & editorial photography portfolio showcasing timeless visual stories',
-    link: 'https://julianvance.vercel.app/'
+    src: "Project Images/Photographer Portfolio.png",
+    alt: "Anime AMVs",
+    title: "Anime AMVs",
+    subtitle: "Video Editing · seiua amv",
+    description: "Anime music-video edits built around pacing, music, emotion, and visual storytelling.",
+    link: "https://www.instagram.com/ur.seiua/"
   },
   {
-    src: 'Project Images/Portfolio Design.png',
-    alt: 'Portfolio Design',
-    title: 'Portfolio Design',
-    subtitle: 'Minimalist Creative Developer Portfolio',
-    description: 'A sleek, high-performance portfolio crafted with modern typography, fluid interactions, and curated creative work.',
-    link: 'https://echooo.web.app/'
+    src: "Project Images/Portfolio Design.png",
+    alt: "ECHO Portfolio",
+    title: "ECHO Portfolio",
+    subtitle: "Interactive Web Portfolio",
+    description: "A monochrome editorial portfolio adapted to present Sandeep's projects, interests, and creative work.",
+    link: "https://github.com/sandeep-datta-research/Echo"
   },
   {
-    src: 'Project Images/Portfolio Website.png',
-    alt: 'Portfolio Website',
-    title: 'Portfolio Website',
-    subtitle: 'Personal Developer & Designer Portfolio',
-    description: 'A personal portfolio highlighting full-stack engineering, interactive UI components, and modern web craft.',
-    link: 'https://jishnumondal.vercel.app/'
+    src: "Project Images/Portfolio Website.png",
+    alt: "Clouded by You",
+    title: "Clouded by You",
+    subtitle: "Romance · Mystery · Supernatural Fiction",
+    description: "An ongoing original webnovel exploring romance, reincarnation, and supernatural weather under the pen name ifsato.",
+    link: "#contact"
   },
   {
-    src: 'Project Images/Sen Cruzo-Client Portfolio.png',
-    alt: 'Sen Cruzo',
-    title: 'Sen Cruzo',
-    subtitle: 'Luxury Architectural & Client Portfolio',
-    description: 'A bespoke editorial portfolio designed for high-profile client presentation, featuring immersive layouts and architectural visual storytelling.',
-    link: 'https://sencruzo.web.app/'
+    src: "Project Images/Sen Cruzo-Client Portfolio.png",
+    alt: "Systems Lab",
+    title: "Systems Lab",
+    subtitle: "Linux · Networking · Security Learning",
+    description: "Hands-on learning in Linux, networking, cybersecurity fundamentals, troubleshooting, and systems.",
+    link: "#contact"
   }
 ];
 

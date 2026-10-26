@@ -1,162 +1,64 @@
-# ECHO — Editorial Developer & Designer Portfolio
+# ECHO — Sandeep Datta's Creative Portfolio
 
-<div align="center">
+A monochrome, motion-led portfolio adapted from the original ECHO website to present **Sandeep Datta's** projects, interests, and creative work.
 
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-  [![WebGL](https://img.shields.io/badge/Graphics-OGL_WebGL-black?style=for-the-badge&logo=webgl&logoColor=white)](https://github.com/oframe/ogl)
-  [![License](https://img.shields.io/badge/License-MIT-000000?style=for-the-badge)](LICENSE)
+> **Attribution:** This repository began as a copy of [ECHO-WEBSITE by Jishnu Mondal](https://github.com/Jishnu09-siuu/ECHO-WEBSITE). The original components, visual system, and assets have been retained and adapted. Please review the upstream repository's license and attribution requirements before redistributing.
 
-  <p align="center">
-    <strong>A bespoke, high-performance monochrome editorial portfolio showcasing digital craftsmanship, spatial web animations, and interactive design engineering.</strong>
-  </p>
+## About Sandeep
 
-  <p align="center">
-    Crafted by <strong><a href="https://github.com/Jishnu09-siuu">Jishnu Mondal</a></strong> — Designer & Full-Stack Creative Developer.
-  </p>
+I'm a student, builder, and creative learner interested in the intersection of technology and storytelling. My work and interests include:
 
-</div>
+- **AI product building:** Luna AI, a personal assistant project under DeimosAI.
+- **Web and interface development:** experimenting with interactive, responsive web experiences.
+- **Linux and systems:** Linux desktop customization, troubleshooting, and networking fundamentals.
+- **Cybersecurity learning:** exploring security concepts and safe, authorized lab practice.
+- **Video editing:** anime AMVs and short-form edits under the *seiua amv* identity.
+- **Writing:** *Clouded by You*, an ongoing romance, mystery, and supernatural-weather webnovel written as **ifsato**.
+- **Creative and analytical pursuits:** research, poetry, cooking, chess, volleyball, football, and basketball.
 
----
+This portfolio represents ongoing learning and personal projects; it does not claim that every listed area is professional or commercial experience.
 
-## ✦ Overview
+## Featured projects
 
-**ECHO** is an editorial developer and designer portfolio engineered with a focus on typography, fluid physics, and cutting-edge web graphics. Built around a curated monochrome aesthetic, it marries brutalist minimalism with rich micro-interactions, hardware-accelerated scroll animations, and interactive 3D drum reel navigation.
-
-Whether presenting production landing pages, full-stack applications, or bespoke brand identities, ECHO provides an immersive editorial reading and browsing experience.
-
----
-
-## ✦ Key Features & Interactive Architecture
-
-### 1. 🪐 Custom ECHO Orbital Preloader
-- Seamless intro experience with an orbital wavy dot animation synchronized via `requestAnimationFrame`.
-- Auto-detects first load and dissolves smoothly to unveil the editorial hero section.
-
-### 2. 🗞️ Editorial Hero & Metallic Typography Shaders
-- Fluid responsive typography driven by dynamic viewport calculations (`clamp` / `vw`).
-- Multi-layer metallic header effects and integrated portrait depth masking.
-- Intersection-observer-powered entrance reveals that gracefully retrigger on revisit.
-
-### 3. 🔍 `ScrollExpandMedia` Kinetic Canvas
-- Scroll-driven media expansion stage that smoothly interpolates card dimensions, aspect ratio, and blur filters.
-- Dual-layer GPU-accelerated unblur rendering running at 120 FPS without reflow penalties.
-- Minimalist perimeter content layout ensuring 100% unobscured artwork visibility.
-
-### 4. 🧭 Horizontal Spatial Experience Canvas
-- Sticky horizontal timeline translating vertical user scroll into horizontal spatial progression.
-- Interactive timeline panels displaying milestones, career history, and "living flow" energy animations.
-- Accessible fallback honoring user OS preferences (`prefers-reduced-motion`).
-
-### 5. 🎡 WorksWheel 3D Drum Reel
-- Mathematical 3D cylindrical drum projection with radial ring transformations (`rotateX`, `rotateZ`, `translateZ`).
-- Physics-based smooth drag gestures, momentum inertia, wheel scrolling, and step navigation.
-- Deep project integration linking directly into dynamic modal inspection.
-
-### 6. 🌊 FlexCarousel (OGL WebGL Liquid Preset)
-- Interactive card slider powered by **OGL** (lightweight WebGL engine) with liquid lens bending and real-time mesh displacement.
-- Dynamic accordion states, focus-on-click navigation, and full keyboard/touch support.
-
-### 7. 🪟 Interactive Project Inspection Modal
-- Glassmorphic modal viewer with animated backdrop blur (`cubic-bezier` spring easing).
-- Comprehensive project metadata: client background, deliverable scopes, tech stacks, and direct links to live deployments.
-
----
-
-## ✦ Tech Stack
-
-| Domain | Technology | Description |
+| Project | What it is | Link |
 |---|---|---|
-| **Structure** | HTML5 / Semantic Web | SEO-optimized, accessible markup with meta hierarchy |
-| **Styling** | Vanilla CSS + Tailwind CSS v3 | Custom dark/light design tokens, typography & CSS variables |
-| **Graphics & WebGL** | [OGL](https://github.com/oframe/ogl) | High-performance WebGL 3D meshes & shaders for liquid bending |
-| **Logic & Motion** | Vanilla JavaScript (ES Modules) | Lightweight, zero-framework overhead, modular components |
-| **Typography** | Plus Jakarta Sans | Editorial modernist sans-serif loaded from Google Fonts |
-| **Components** | `flex-carousel`, `works-wheel`, `scroll-expand-media` | Bespoke modular UI engines |
+| **Luna AI** | An evolving AI assistant project under DeimosAI | [GitHub repository](https://github.com/sandeep-datta-research/Luna) |
+| **DeimosAI** | Parent brand and project space for AI and creative-technology experiments | [GitHub repository](https://github.com/sandeep-datta-research/Deimosai) |
+| **ECHO Portfolio** | This interactive editorial portfolio | [GitHub repository](https://github.com/sandeep-datta-research/Echo) |
+| **Anime AMVs** | Video editing and anime-focused visual storytelling | [Instagram](https://www.instagram.com/ur.seiua/) |
+| **Clouded by You** | Original webnovel by ifsato | In progress |
+| **Systems Lab** | Learning in Linux, networking, security fundamentals, and troubleshooting | In progress |
 
----
+## Original ECHO features retained
 
-## ✦ Featured Projects
+- Orbital preloader and editorial typography.
+- Scroll-driven expanding media stage.
+- Horizontal, scroll-linked experience section.
+- 3D WorksWheel project navigation.
+- OGL/WebGL liquid FlexCarousel.
+- Responsive navigation and project/contact modals.
+- Reduced-motion support in relevant components.
 
-The portfolio indexes a curated roster of production web applications, landing pages, and client systems:
+## Tech used by the original template
 
-- **Aether AI**: Cognitive workspace engineered for deep systemic research and reasoning canvas telemetry.
-- **Aether Protocol**: Monolithic preview portal and executive onboarding architectural briefing flow.
-- **Afterform S01**: Minimalist architectural lookbook and editorial digital showcase.
-- **Cafe Website (Mocha & Miso)**: Full-stack cafe management system with order processing and real-time reservation portal.
-- **Design Studio**: Bold creative agency identity website with fluid layout systems.
-- **Julian Vance Photography**: Analog & editorial photography archive showcasing visual storytelling.
-- **Sen Cruzo Client Portfolio**: Luxury architectural client presentation portfolio with custom typography.
+HTML5, CSS, Tailwind CSS via CDN, vanilla JavaScript ES modules, and OGL/WebGL. The repository also includes TypeScript/React component reference files.
 
----
+## Run locally
 
-## ✦ Project Structure
+Requirements: Python 3 or Node.js.
 
 ```bash
-ECHO-WEBSITE/
-├── index.html                   # Core single-page portfolio layout & markup
-├── flex-carousel.js             # WebGL / OGL-powered liquid carousel engine
-├── FlexCarousel.css             # Stylesheet for carousel layout & states
-├── FlexCarousel.tsx             # React / TypeScript source reference
-├── works-wheel.js               # 3D Cylindrical drum reel component
-├── scroll-expand-media.js       # Scroll-driven media expansion engine
-├── ScrollExpandMedia.tsx        # Component source reference
-├── experience-section.js        # Horizontal spatial timeline engine
-├── package.json                 # Project configuration & scripts
-├── assets/                      # Brand assets, portrait imagery, and icons
-├── Project Images/              # Production portfolio preview captures
-└── Landing Page Assest/         # Full-length landing page showcase assets
-```
-
----
-
-## ✦ Getting Started Locally
-
-This project is built using native ES modules and standard web technologies. You can run it with any local HTTP server:
-
-### Prerequisites
-- Python 3.x **or** Node.js installed on your machine.
-
-### Option 1: Python Simple HTTP Server (Recommended)
-```bash
-# Clone the repository
-git clone https://github.com/Jishnu09-siuu/ECHO-WEBSITE.git
-cd ECHO-WEBSITE
-
-# Run local development server
-npm start
-# or directly:
+git clone https://github.com/sandeep-datta-research/Echo.git
+cd Echo
 python3 -m http.server 8080
 ```
-Then navigate to `http://localhost:8080` in your browser.
 
-### Option 2: Node.js / Vite / `npx serve`
-```bash
-npx serve .
-# or
-npx live-server
-```
+Open `http://localhost:8080` in your browser. You can also use `npm start` if the package script is installed and available.
 
----
+## Deployment
 
-## ✦ Deployment
+The site is static and can be hosted using GitHub Pages, Vercel, or Netlify. Configure the hosting provider to serve the repository root.
 
-Because ECHO is completely static and modular, it can be deployed instantly to any edge hosting provider:
+## Credits and licensing
 
-- **Vercel**: Run `vercel` from the root directory or connect the GitHub repository.
-- **Netlify**: Drag and drop the folder or connect via Git with publish directory set to `/`.
-- **GitHub Pages**: Head to repository **Settings > Pages** and set source to branch `main` and folder `/ (root)`.
-
----
-
-## ✦ Connect & Socials
-
-- **Portfolio**: [Jishnu Mondal](https://jishnumondal.vercel.app/)
-- **GitHub**: [@Jishnu09-siuu](https://github.com/Jishnu09-siuu)
-- **LinkedIn**: [jishnu-mondal](https://www.linkedin.com/in/jishnu-mondal/)
-- **X / Twitter**: [@Jishn8m](https://x.com/Jishn8m)
-
----
-
-## ✦ License
-
-This project is open-source and available under the [MIT License](LICENSE).
+The original ECHO source README describes the project as MIT-licensed, but the imported repository did not contain a standalone `LICENSE` file at the time of adaptation. Check the upstream repository and obtain/retain the appropriate license text before redistributing. Original author and source: [Jishnu09-siuu/ECHO-WEBSITE](https://github.com/Jishnu09-siuu/ECHO-WEBSITE).

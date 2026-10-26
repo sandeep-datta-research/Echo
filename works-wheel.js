@@ -35,70 +35,70 @@ function place(ringDeg, drumDeg, ringR, drumR, bow, m) {
 
 export const DEFAULT_WORKS = [
   {
-    title: "Aether AI",
-    subtitle: "Cognitive Workspace & Deep Reasoning",
-    description: "A cognitive workspace engineered for deep systemic research, disciplined reasoning, and structural synthesis with real-time active node synthesis.",
+    title: "Luna AI",
+    subtitle: "AI Assistant · DeimosAI",
+    description: "An evolving personal AI assistant project focused on a polished conversational experience.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.25\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.25\u202fPM.png",
-    href: "#aether-ai",
-    stats: "Active Node Engine • Systemic Synthesis • Structural Research",
-    tools: ["React", "TypeScript", "Tailwind CSS", "AI Engine"],
-    deliverables: ["Cognitive Workspace UI", "Active Node Telemetry", "Interactive Reasoning Canvas"]
+    href: "https://github.com/sandeep-datta-research/Luna",
+    stats: "AI Product • Interface Design • Iteration",
+    tools: ["AI tooling","Web development","UI design"],
+    deliverables: ["Conversational interface","Product exploration","Assistant workflows"]
   },
   {
-    title: "Aether Protocol",
-    subtitle: "Private Preview & Monolithic Deployment",
-    description: "Exclusive onboarding portal and architectural briefing interface engineered for research scientists, architectural principals, and technical executives.",
+    title: "DeimosAI",
+    subtitle: "Creative Technology & AI",
+    description: "The parent brand and project space behind Luna AI and future experiments.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.43\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.46.43\u202fPM.png",
-    href: "#aether-protocol",
-    stats: "Version 4.5.2 • Monolithic Core Stability • Immediate Deployment",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Figma"],
-    deliverables: ["Briefing Reservation Portal", "Monolithic Design System", "Executive Onboarding Flow"]
+    href: "https://github.com/sandeep-datta-research/Deimosai",
+    stats: "AI Experiments • Product Ideas • Creative Technology",
+    tools: ["AI","Product thinking","Web"],
+    deliverables: ["Brand direction","Product concepts","Experimentation"]
   },
   {
-    title: "Afterform S01",
-    subtitle: "Brutalist Campaign & Visual Monograph",
-    description: "A seasonal fashion campaign and visual monograph capturing structural streetwear silhouettes framed against raw monolithic concrete architecture.",
+    title: "ECHO Portfolio",
+    subtitle: "Interactive Editorial Web",
+    description: "A monochrome, motion-led portfolio adapted to showcase personal projects and creative interests.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.28\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.28\u202fPM.png",
-    href: "#afterform-s01",
-    stats: "Campaign S01 • Frame Ref: 35mm_Exp_09 • Visual Monograph",
-    tools: ["Next.js", "Tailwind CSS", "Figma", "Lenis Scroll"],
-    deliverables: ["Visual Monograph Experience", "High-Resolution Lookbook", "Seasonal Campaign Direction"]
+    href: "https://github.com/sandeep-datta-research/Echo",
+    stats: "Editorial UI • Motion • Responsive Layout",
+    tools: ["HTML","CSS","JavaScript"],
+    deliverables: ["Portfolio experience","Interactive components","Responsive presentation"]
   },
   {
-    title: "Afterform System",
-    subtitle: "Brutalist Apparel & Brand Manifesto",
-    description: "A monolithic architectural apparel manifesto stripping garments of emblems and logos, focusing on pure volume, silhouette, and human-concrete alignment.",
+    title: "Anime AMVs",
+    subtitle: "Editing · Music · Storytelling",
+    description: "Anime music-video edits built around emotion, rhythm, transitions, and visual storytelling.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.46\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.46\u202fPM.png",
-    href: "#afterform-system",
-    stats: "Tokyo Studio • Berlin Lab • Seoul Showroom",
-    tools: ["React", "Tailwind CSS", "Figma", "GSAP"],
-    deliverables: ["Brand Manifesto Landing Page", "Brutalist Lookbook System", "E-Commerce Catalog Layout"]
+    href: "https://www.instagram.com/ur.seiua/",
+    stats: "Video Editing • Anime • Music",
+    tools: ["Video editing","Sound timing","Visual storytelling"],
+    deliverables: ["AMV edits","Short-form videos","Creative experiments"]
   },
   {
-    title: "Maison Éléara",
-    subtitle: "Fine Jewellery & Parisian Atelier",
-    description: "An haute jewellery boutique celebrating sculpted contours in heavy fairmined gold born from geological stillness, crafted in Paris Place Vendôme.",
+    title: "Clouded by You",
+    subtitle: "Original Webnovel · ifsato",
+    description: "An ongoing romance, mystery, and supernatural-weather story exploring reincarnation and fate.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.03\u202fPM.png",
-    href: "#maison-eleara",
-    stats: "Place Vendôme Atelier • 18k Recycled Gold • Aurelia Torc & Drops",
-    tools: ["Figma", "React", "Tailwind CSS", "High-Precision Typography"],
-    deliverables: ["Fine Jewellery Boutique", "Atelier Concierge Interface", "Artisanal Archive Showcase"]
+    href: "#contact",
+    stats: "Fiction • Mystery • Supernatural Romance",
+    tools: ["Creative writing","Worldbuilding","Story structure"],
+    deliverables: ["Webnovel chapters","Character arcs","Worldbuilding"]
   },
   {
-    title: "Éléara Campaign",
-    subtitle: "Campaign Edition Vol. IX — Sandstone Edit",
-    description: "An organic editorial campaign highlighting sculpted gold signet jewellery set against raw geological sandstone formations, with private salon concierge booking.",
+    title: "Systems Lab",
+    subtitle: "Linux · Networking · Security",
+    description: "A learning track exploring Linux, networking, cybersecurity fundamentals, and systems troubleshooting.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.42\u202fPM.png",
     src: "Landing Page Assest/Screenshot 2026-10-20 at 7.44.42\u202fPM.png",
-    href: "#eleara-campaign",
-    stats: "Campaign Edition Vol. IX • Sandstone Geology • Atelier Concierge",
-    tools: ["WebGL", "Three.js", "Tailwind CSS", "Smooth Scroll"],
-    deliverables: ["Campaign Lookbook Experience", "Private Salon Reservation Portal", "Sensory Art Direction"]
+    href: "#contact",
+    stats: "Linux • Networking • Security Fundamentals",
+    tools: ["Linux","Networking","Troubleshooting"],
+    deliverables: ["Hands-on learning","System experiments","Technical notes"]
   }
 ];
 
