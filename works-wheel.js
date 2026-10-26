@@ -57,7 +57,7 @@ export const DEFAULT_WORKS = [
     deliverables: ["Brand direction","Product concepts","Experimentation"]
   },
   {
-    title: "ECHO Portfolio",
+    title: "Stellan Portfolio",
     subtitle: "Interactive Editorial Web",
     description: "A monochrome, motion-led portfolio adapted to showcase personal projects and creative interests.",
     image: "Landing Page Assest/Screenshot 2026-10-20 at 7.45.28\u202fPM.png",
