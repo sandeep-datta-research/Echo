@@ -29,8 +29,8 @@ export const DEFAULT_ITEMS = [
   },
   {
     src: "Project Images/Portfolio Design.png",
-    alt: "ECHO Portfolio",
-    title: "ECHO Portfolio",
+    alt: "Stellan Portfolio",
+    title: "Stellan Portfolio",
     subtitle: "Interactive Web Portfolio",
     description: "A monochrome editorial portfolio adapted to present Sandeep's projects, interests, and creative work.",
     link: "https://github.com/sandeep-datta-research/Echo"
