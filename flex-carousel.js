@@ -41,7 +41,7 @@ export const DEFAULT_ITEMS = [
     title: "Clouded by You",
     subtitle: "Romance · Mystery · Supernatural Fiction",
     description: "An ongoing original webnovel exploring romance, reincarnation, and supernatural weather under the pen name ifsato.",
-    link: "#contact"
+    link: "https://www.webnovel.com/book/clouded-by-you_35645915308878605"
   },
   {
     src: "Project Images/Sen Cruzo-Client Portfolio.png",
