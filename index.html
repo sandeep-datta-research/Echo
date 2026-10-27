@@ -1484,6 +1484,91 @@
 
   </script>
 
+
+  <!-- About section scroll-linked expansion and title split animation -->
+  <script>
+    function initAboutScrollAnimation() {
+      const section = document.getElementById('about');
+      const card = document.getElementById('sem-media-container');
+      const background = document.getElementById('sem-bg-img');
+      const sharpImage = document.getElementById('sem-media-img');
+      const blurImage = document.getElementById('sem-media-blur');
+      const overlay = document.getElementById('sem-media-overlay');
+      const content = document.getElementById('sem-media-content');
+      const titleFirst = document.getElementById('sem-title-first');
+      const titleRest = document.getElementById('sem-title-rest');
+      const date = document.getElementById('sem-date');
+      const prompt = document.getElementById('sem-scroll-prompt');
+      if (!section || !card || !titleFirst || !titleRest) return;
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let rafPending = false;
+      const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+      const smooth = (v) => {
+        const t = clamp(v, 0, 1);
+        return t * t * (3 - 2 * t);
+      };
+
+      function render() {
+        rafPending = false;
+        const rect = section.getBoundingClientRect();
+        const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+        const progress = reduceMotion ? 1 : clamp(-rect.top / travel, 0, 1);
+        const expand = smooth(progress / 0.78);
+        const fadeTitles = smooth((progress - 0.12) / 0.35);
+        const revealContent = smooth((progress - 0.68) / 0.2);
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        card.style.width = (300 + (vw - 300) * expand) + 'px';
+        card.style.height = (400 + (vh - 400) * expand) + 'px';
+        card.style.borderRadius = (16 * (1 - expand)) + 'px';
+        card.style.maxWidth = '95vw';
+        card.style.maxHeight = '100vh';
+
+        titleFirst.style.transform = 'translate3d(' + (-vw * 0.72 * fadeTitles) + 'px, 0, 0)';
+        titleRest.style.transform = 'translate3d(' + (vw * 0.72 * fadeTitles) + 'px, 0, 0)';
+        titleFirst.style.opacity = String(1 - fadeTitles);
+        titleRest.style.opacity = String(1 - fadeTitles);
+
+        if (date) {
+          date.style.transform = 'translate3d(' + (-vw * 0.35 * fadeTitles) + 'px, 0, 0)';
+          date.style.opacity = String(1 - fadeTitles);
+        }
+        if (prompt) {
+          prompt.style.transform = 'translate3d(' + (vw * 0.35 * fadeTitles) + 'px, 0, 0)';
+          prompt.style.opacity = String(1 - fadeTitles);
+        }
+        if (background) background.style.opacity = String(1 - progress * 0.88);
+        if (blurImage) blurImage.style.opacity = String(1 - smooth(progress / 0.72));
+        if (overlay) overlay.style.opacity = String(0.9 - 0.28 * expand);
+        if (sharpImage) sharpImage.style.transform = 'scale(' + (1.02 + expand * 0.06) + ') translateZ(0)';
+        if (content) {
+          content.style.opacity = String(revealContent);
+          content.style.pointerEvents = revealContent > 0.9 ? 'auto' : 'none';
+          content.style.transform = 'translate3d(0,' + ((1 - revealContent) * 14) + 'px,0)';
+        }
+      }
+
+      function scheduleRender() {
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(render);
+      }
+
+      window.addEventListener('scroll', scheduleRender, { passive: true });
+      window.addEventListener('resize', scheduleRender, { passive: true });
+      window.addEventListener('orientationchange', scheduleRender, { passive: true });
+      render();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAboutScrollAnimation, { once: true });
+    } else {
+      initAboutScrollAnimation();
+    }
+  </script>
+
   <script>
     (() => {
       const preloader = document.getElementById('stellan-preloader');
