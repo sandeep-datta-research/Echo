@@ -1485,6 +1485,103 @@
   </script>
 
 
+  <!-- Experience section scroll-linked horizontal journey animation -->
+  <script>
+    function initExperienceScrollAnimation() {
+      const section = document.getElementById('experience');
+      const viewport = document.getElementById('exp-sticky-viewport');
+      const stage = document.getElementById('exp-horizontal-stage');
+      if (!section || !viewport || !stage) return;
+
+      const phaseLabel = document.getElementById('exp-hud-phase');
+      const progressBar = document.getElementById('exp-hud-progress');
+      const tickerTop = document.getElementById('exp-ticker-top');
+      const tickerBottom = document.getElementById('exp-ticker-bottom');
+      const panels = Array.from(stage.querySelectorAll('.exp-panel'));
+      const jumpButtons = Array.from(section.querySelectorAll('.exp-jump-btn'));
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let framePending = false;
+      const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+      const smooth = (value) => {
+        const t = clamp(value, 0, 1);
+        return t * t * (3 - 2 * t);
+      };
+
+      function render() {
+        framePending = false;
+        const rect = section.getBoundingClientRect();
+        const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+        const progress = reduceMotion ? 0 : clamp(-rect.top / travel, 0, 1);
+        const maxShift = Math.max(0, stage.scrollWidth - window.innerWidth);
+        const shift = progress * maxShift;
+
+        if (!reduceMotion) stage.style.transform = 'translate3d(' + (-shift) + 'px,0,0)';
+        else stage.style.transform = 'none';
+
+        const chapter = progress < 0.08 ? 0 : progress < 0.56 ? 1 : 2;
+        if (phaseLabel) {
+          phaseLabel.textContent = ['FOUNDATION & JOURNEY', 'SELF-DIRECTED LEARNING', 'FREELANCE / INDEPENDENT'][chapter];
+        }
+        if (progressBar) progressBar.style.width = (progress * 100) + '%';
+
+        panels.forEach((panel, index) => {
+          const center = (panel.offsetLeft - shift + panel.offsetWidth / 2) / window.innerWidth;
+          const distance = Math.abs(center - 0.5);
+          const visibility = 1 - smooth((distance - 0.25) / 0.65);
+          panel.style.opacity = String(0.55 + visibility * 0.45);
+          panel.style.transform = reduceMotion ? 'none' : 'translate3d(0,' + (distance * 18) + 'px,0)';
+        });
+
+        section.querySelectorAll('.exp-date-bg').forEach((date) => {
+          const factor = Number(date.dataset.parallaxFactor || 0.15);
+          date.style.transform = 'translate3d(' + (-shift * factor) + 'px,0,0)';
+        });
+        if (tickerTop) tickerTop.style.transform = 'translate3d(' + (-progress * 110) + 'px,0,0)';
+        if (tickerBottom) tickerBottom.style.transform = 'translate3d(' + (progress * 110) + 'px,0,0)';
+
+        jumpButtons.forEach((button) => {
+          const target = Number(button.dataset.targetProgress || 0);
+          const active = Math.abs(progress - target) < 0.22;
+          button.classList.toggle('border-white/20', active);
+          button.classList.toggle('bg-white/10', active);
+          button.classList.toggle('text-white', active);
+          button.classList.toggle('border-white/5', !active);
+          button.classList.toggle('text-neutral-500', !active);
+        });
+      }
+
+      function scheduleRender() {
+        if (framePending) return;
+        framePending = true;
+        requestAnimationFrame(render);
+      }
+
+      jumpButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const targetProgress = clamp(Number(button.dataset.targetProgress || 0), 0, 1);
+          const sectionTop = window.scrollY + section.getBoundingClientRect().top;
+          const travel = Math.max(1, section.offsetHeight - window.innerHeight);
+          window.scrollTo({
+            top: sectionTop + targetProgress * travel,
+            behavior: reduceMotion ? 'auto' : 'smooth'
+          });
+        });
+      });
+
+      window.addEventListener('scroll', scheduleRender, { passive: true });
+      window.addEventListener('resize', scheduleRender, { passive: true });
+      window.addEventListener('orientationchange', scheduleRender, { passive: true });
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleRender);
+      render();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initExperienceScrollAnimation, { once: true });
+    } else {
+      initExperienceScrollAnimation();
+    }
+  </script>
+
   <!-- About section scroll-linked expansion and title split animation -->
   <script>
     function initAboutScrollAnimation() {
