@@ -36,6 +36,14 @@ export const DEFAULT_ITEMS = [
     link: "https://github.com/sandeep-datta-research/Echo"
   },
   {
+    src: "Project Images/Portfolio Design.png",
+    alt: "Serius / Stellan Portfolio",
+    title: "Serius",
+    subtitle: "Cinematic Personal Portfolio",
+    description: "Sandeep Datta’s streaming-inspired portfolio with a React, TypeScript, and Vite foundation.",
+    link: "https://github.com/sandeep-datta-research/Serius"
+  },
+  {
     src: "Project Images/Portfolio Website.png",
     alt: "Clouded by You",
     title: "Clouded by You",
